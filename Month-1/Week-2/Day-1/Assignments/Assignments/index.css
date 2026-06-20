@@ -1,0 +1,126 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color:grey; /* Light grey backdrop */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Card Styling */
+.card {
+  background-color: #ffffff;
+  width: 320px;
+  border-radius: 24px; /* Softly rounded corners */
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* Top Image Container */
+.card-image-area {
+  background-color: #a7f3d0; /* Soft green background */
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Pure CSS Image Icon (Replacing SVG) */
+.css-image-icon {
+  width: 50px;
+  height: 40px;
+  border: 3.5px solid #059669;
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden;
+  opacity: 0.7;
+}
+
+.icon-sun {
+  width: 8px;
+  height: 8px;
+  background-color: #059669;
+  border-radius: 50%;
+  position: absolute;
+  top: 6px;
+  left: 8px;
+}
+
+.icon-mountain-large {
+  width: 0;
+  height: 0;
+  border-left: 18px solid transparent;
+  border-right: 18px solid transparent;
+  border-bottom: 18px solid #059669;
+  position: absolute;
+  bottom: -2px;
+  right: 2px;
+}
+
+.icon-mountain-small {
+  width: 0;
+  height: 0;
+  border-left: 14px solid transparent;
+  border-right: 14px solid transparent;
+  border-bottom: 14px solid #059669;
+  position: absolute;
+  bottom: -2px;
+  left: 0px;
+}
+
+/* Text & Button Area */
+.card-content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.badge {
+  background-color: #f3f4f6;
+  color: #6b7280;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 12px;
+  width: fit-content;
+}
+
+.card-title {
+  font-size: 20px;
+  color: #1f2937;
+  font-weight: 700;
+  margin-top: 4px;
+}
+
+.card-description {
+  font-size: 14px;
+  color: #9ca3af; /* Light grey text */
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+/* Action Button */
+.action-btn {
+  background-color: #3b82f6; /* Accent Blue */
+  color: #ffffff;
+  border: none;
+  padding: 14px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.action-btn:hover {
+  background-color: #2563eb;
+}
